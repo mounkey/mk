@@ -17,7 +17,7 @@ const ViewWelcome = ( {navigation}) => {
       <MenuAlt />
       <Text style={styles.text}>Receta que selecciono </Text>
       <View style={styles.buttonContainer}>
-        <Button title="Regresar" bkcolor={Color.primary} color={Color.letter} onPress={() => navigation.navigate('welcome')} />
+        <Button title="Regresar" bkcolor={Color.primary} color={Color.letter} onPress={() => navigation.navigate('Welcome')} />
       </View>
       <View style={styles.flatContainer}>
         <FlatList

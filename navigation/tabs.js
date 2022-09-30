@@ -15,14 +15,14 @@ const Tabs = () => {
       screenOptions={{
         headerShown: false,
         tabBarLabelStyle: {
-          fontFamily:"lato-bold",
+          
           color: color.primary,
         },
       }}
     >
        <BottomTab.Screen
         name = "HomeTab"
-        comnponent = {StackHomeNavigation}
+        component = {StackHomeNavigation}
         options = {{
           title: "Inicio",
           tabBarIcon: ({focused}) => (
@@ -37,12 +37,12 @@ const Tabs = () => {
 
       <BottomTab.Screen
         name = "RecipesTab"
-        comnponent = {StackRecipesNavigation}
+        component = {StackRecipesNavigation}
         options = {{
           title: "Recetas",
           tabBarIcon: ({focused}) => (
             <Ionicons
-              name = {focused ? "ios-retaurant" : "ios-restaurant-outline"}
+              name = {focused ? "ios-receipt" : "ios-receipt-outline"}
               size = {24}
               color = {color.primary}
             />
@@ -52,7 +52,7 @@ const Tabs = () => {
 
       <BottomTab.Screen
         name = "ListTab"
-        comnponent = {StackListNavigation}
+        component = {StackListNavigation}
         options = {{
           title: "Lista Super",
           tabBarIcon: ({focused}) => (
